@@ -1,0 +1,21 @@
+{
+  "name": "appiumcodeceptjs",
+  "version": "1.0.0",
+  "description": "curso testes automatizados appium codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx codeceptjs run --steps",
+    "test_android": "set PLATFORM=Android && set APP='C:\\Projetos_Outros\\Estudo\\Appium\\app-release.apk' && set DEVICE=Pixel-7API33 && set VERSION=13 && set PACKAGE='com.qazandoapp' && set ACTIVITY='MainActivity' && npx codeceptjs run --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.5.12",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "^4.17.0",
+    "webdriverio": "^8.6.3"
+  },
+  "devDependencies": {
+    "@wdio/selenium-standalone-service": "^8.15.0"
+  }
+}
