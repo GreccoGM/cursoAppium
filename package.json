@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "npx codeceptjs run --steps",
-    "test_android": "set PLATFORM=Android && set APP='C:\\Projetos_Outros\\Estudo\\Appium\\app-release.apk' && set DEVICE=Pixel-7API33 && set VERSION=13 && set PACKAGE='com.qazandoapp' && set ACTIVITY='MainActivity' && npx codeceptjs run --steps"
+    "test_android": "npx codeceptjs run --steps set PLATFORM=Android set APP='C:\\Projetos_Outros\\Estudo\\Appium\\app-release.apk' set DEVICE=Pixel-7API33 set VERSION=13 set PACKAGE='com.qazandoapp' set ACTIVITY='MainActivity'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "appium": "^2.5.0",
     "codeceptjs": "^3.5.12",
     "mocha": "^10.2.0",
     "selenium-webdriver": "^4.17.0",
