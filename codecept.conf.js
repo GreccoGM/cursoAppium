@@ -18,18 +18,27 @@ exports.config = {
     Appium: {
       appiumV2: true,
     app: 'C:\\Projetos_Outros\\Estudo\\Appium\\app-release.apk',
-    platform: 'Android',
-    device: 'Pixel7API33',
+    platform: 'android',
+    device: 'emulator',
     port: 4723,
+    path: '/wd/hub',
     browser: '',
     capabilities: {
         appPackage: "com.qazandoapp",
-        appActivity: "MainActivity",
         deviceName: process.env.DEVICE || 'Emulator',
         platformName: process.env.PLATFORM || 'Android',
         platformVersion: process.env.OS_VERSION || '13.0',
         automationName: process.env.ENGINE || 'UIAutomator2',
-        avd: process.env.UDID || 'Pixel7API33'
+        avd: process.env.UDID || 'Pixel-7API33',
+        newCommandTimeout: 300000,
+        androidDeviceReadyTimeout: 300000,
+        androidInstallTimeout: 90000,
+        appWaitDuration: 300000,
+        autoGrantPermissions: true,
+        gpsEnabled: true,
+        isHeadless: false,
+        noReset: false,
+        noSign: true
       }
     },
    /* Appium: {
