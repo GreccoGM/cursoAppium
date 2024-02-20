@@ -16,4 +16,5 @@ PLATFORM=Android APP='caminhoAPK' DEVICE=<nomeDevice> VERSION=<vAndroid> PACKAGE
         appActivity: "MainActivity",
         deviceName: "Pixel_7_API_33",
         platformVersion: "13"  //versao android
-         
+
+criaçao de pages: npx codeceptjs gpo

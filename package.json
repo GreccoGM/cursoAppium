@@ -10,7 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "appium": "^2.5.0",
+    "appium": "^2.5.1",
+    "appium-uiautomator2-driver": "^3.0.0",
     "codeceptjs": "^3.5.12",
     "mocha": "^10.2.0",
     "selenium-webdriver": "^4.17.0",
