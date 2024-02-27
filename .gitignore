@@ -1,2 +1,5 @@
 node_modules
 ~
+app-release.apk
+output
+mochawesome-report
